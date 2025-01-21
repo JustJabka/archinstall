@@ -6,16 +6,36 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 read -p "Enter hostname: " hostname
-read -sp "Enter password for root: " root_password
-echo
+
+while true; do
+    read -sp "Enter password for root: " root_password
+    echo
+    read -sp "Confirm password for root: " root_password_confirm
+    echo
+    if [ "$root_password" == "$root_password_confirm" ]; then
+        break
+    else
+        echo "Passwords for root do not match. Please try again."
+    fi
+done
+
 read -p "Enter username: " user
-read -sp "Enter password for user: " user_password
-echo
-read -p "Partition (Example: /dev/nvme0n1): " partition
-read -p "EFI partition (Example: /dev/nvme0n1p1): " efi
-read -p "Swap partition (Example: /dev/nvme0n1p2): " swap
-read -p "Root partition (Example: /dev/nvme0n1p3): " root
-echo
+
+while true; do
+    read -sp "Enter password for user: " user_password
+    echo
+    read -sp "Confirm password for user: " user_password_confirm
+    echo
+    if [ "$user_password" == "$user_password_confirm" ]; then
+        break
+    else
+        echo "Passwords for user do not match. Please try again."
+    fi
+done
+
+echo "All information has been entered successfully."
+echo "Hostname: $hostname"
+echo "User: $user"
 
 # Formatting file systems
 mkfs.fat -F32 $efi
