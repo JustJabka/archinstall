@@ -1,4 +1,4 @@
-1. Connect to wifi, if you have an Ethernet connection, skip this step
+1. Подключитесь к wifi, если у вас Ethernet (проводное) подключение, skip this step
 2. Format and partition your disk
 3. Get **preinstall.sh**
 
