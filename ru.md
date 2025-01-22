@@ -1,5 +1,5 @@
-1. Подключитесь к wifi, если у вас Ethernet (проводное) подключение, skip this step
-2. Format and partition your disk
+1. Подключитесь к wifi, если у вас Ethernet (проводное) подключение, пропустите этот шаг
+2. Отформатируйте и разметите ваш диск
 3. Get **preinstall.sh**
 
     ```curl https://raw.githubusercontent.com/JustJabka/archinstall/main/preinstall.sh -o preinstall.sh```
