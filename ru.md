@@ -1,20 +1,21 @@
 1. Подключитесь к wifi, если у вас Ethernet (проводное) подключение, пропустите этот шаг
 2. Отформатируйте и разметите ваш диск
-3. Get **preinstall.sh**
+3. Скачайте curl с помощью команды ```pacstrap /mnt curl```
+4. Скачайте **preinstall.sh**
 
     ```curl https://raw.githubusercontent.com/JustJabka/archinstall/main/preinstall.sh -o preinstall.sh```
 
-4. Run **preinstall.sh**
+5. Запустите **preinstall.sh**
 
    ```sh preinstall.sh```
 
-6. Enter:
-    - hostname
-    - root password
-    - username
-    - user password
-    - EFI partition
-    - swap partition
-    - root partition
+6. Введите:
+    - hostname (название устройства)
+    - root password (пароль учетной записи администратора)
+    - username (название учетной записи пользователя)
+    - user password (пароль учетной записи пользователя)
+    - EFI partition (загрузочный раздел)
+    - swap partition (раздел для выгрузки неиспользуемых страниц из оперативной памяти)
+    - root partition (основной раздел где будет установленна система)
 
-7. Wait for the reboot
+7. Ждите перезагрузки пк
