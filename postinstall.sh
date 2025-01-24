@@ -48,6 +48,13 @@ if [ $numdrivers -eq 1 ]; then
   fi
 done
 
+sudo pacman -S --noconfirm hyprland ly kitty git yay flatpak vlc pulseaudio 
+sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-firacode-nerd
+sudo fc-cache -fv
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+sudo systemctl --now enable ly.service
+
 echo "Which DE will be installed? (select a number)"
 echo "1. Gnome 2. KDE 3. skip"
 while true; do
@@ -67,10 +74,3 @@ if [ $numde -eq 1 ]; then
     echo "Uncorrected input."
   fi
 done
-
-sudo pacman -S --noconfirm hyprland ly kitty git yay flatpak vlc pulseaudio 
-sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-firacode-nerd
-sudo fc-cache -fv
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
-sudo systemctl --now enable ly.service
