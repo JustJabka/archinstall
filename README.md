@@ -1,3 +1,7 @@
+## About
+
+123
+
 ## En guide
 
 1. Connect to wifi, if you have an Ethernet connection, skip this step
