@@ -1,6 +1,6 @@
 ## About
 
-- [En](#Enguide) [Ru](ru.md) (ua soon)
+- En [Ru](ru.md) (ua soon)
 
 This script is made for a simple ArchLinux installation. Script Developer [JustJabka](https://github.com/JustJabka).
 
