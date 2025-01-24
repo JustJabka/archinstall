@@ -11,9 +11,16 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Check syntax
+      - name: Check preinstall
         run: |
           bash -n preinstall.sh
+          if [ $? -ne 0 ]; then
+            echo "Syntax error"
+            exit 1
+          fi
+      - name: Check postinstall
+        run: |
+          bash -n postinstall.sh
           if [ $? -ne 0 ]; then
             echo "Syntax error"
             exit 1
