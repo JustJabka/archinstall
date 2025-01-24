@@ -1,6 +1,7 @@
 ## About
 
-123
+- [En](#Enguide)
+This script is made for a simple ArchLinux installation. Script Developer [JustJabka](https://github.com/JustJabka).
 
 ## En guide
 
