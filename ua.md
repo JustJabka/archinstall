@@ -1,6 +1,6 @@
 ## Про скрипт
 
-- [Англ](README.md) Укр версія
+- [Англ](README.md) [Ру](ru.md) Укр версія
 
 Цей скрипт створен для простого встановлення ArchLinux [JustJabka](https://github.com/JustJabka).
 
@@ -24,3 +24,4 @@
     - root partition (основний розділ де буде встановлена система)
 
 7. Чекайте перезавантаження комп'ютера
+(SLS thanks for the translation)
