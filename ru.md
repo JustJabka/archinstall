@@ -1,6 +1,6 @@
 ## О скрипте
 
-- [Англ](README.md) Ру (укр скоро)
+- [Англ](README.md) Ру [Укр](ua.md)
 
 Этот скрипт сделан для простой установки ArchLinux. Разработчик скрипта [JustJabka](https://github.com/JustJabka).
 
