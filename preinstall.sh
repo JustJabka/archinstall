@@ -83,5 +83,11 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 EOF
 
+echo "--- Installation is complete ---"
+echo "--- After restarting, we recommend running the script *postinstall.sh* ---"
+echo "--- The system will reboot in 15 seconds ---"
+sleep 15s
+
+echo "--- Bye bye! ---"
 umount -R /mnt
 reboot
