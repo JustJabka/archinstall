@@ -7,13 +7,15 @@
 ## Укр гайд
 1. Підєднаннайтесь до wifi, чи якщо у вас Ethernet (проводний) підключення, пропустіть цей крок
 2. Відформатуйте та позначте ваш диск
-3. Завантажте curl за допомогою команди
+3. Завантажте curl за допомогою команди ```pacstrap /mnt curl```
 4. Завантажте preinstall.sh
 
-   
+   ```curl https://raw.githubusercontent.com/JustJabka/archinstall/main/preinstall.sh -o preinstall.sh```
+
 5. Запустіть preinstall.sh
 
-  
+   ```sh preinstall.sh```
+
 6. Увведіть:
     - hostname (назва прилада)
     - root password (пароль учетного записа Адміністратора)
