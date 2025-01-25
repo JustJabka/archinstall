@@ -6,6 +6,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 sudo pacman -S xorg xorg-server xorg-xinit xorg-apps mesa-libgl
+sudo pacman -Sy
 
 echo "--- Thank you for using our scripts ---"
 echo "--- This script will help you complete the system setup ---"
