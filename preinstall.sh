@@ -32,6 +32,12 @@ while true; do
         echo "Passwords for user do not match. Please try again."
     fi
 done
+echo
+read -p "Partition (Example: /dev/nvme0n1): " partition
+read -p "EFI partition (Example: /dev/nvme0n1p1): " efi
+read -p "Swap partition (Example: /dev/nvme0n1p2): " swap
+read -p "Root partition (Example: /dev/nvme0n1p3): " root
+echo
 
 echo "All information has been entered successfully."
 echo "Hostname: $hostname"
