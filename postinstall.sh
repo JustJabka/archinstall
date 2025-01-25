@@ -5,8 +5,8 @@ if [ "$EUID" -ne 0 ]; then
   exit
 fi
 
-sudo pacman -S xorg xorg-server xorg-xinit xorg-apps mesa-libgl
 sudo pacman -Sy
+sudo pacman -S xorg xorg-server xorg-xinit xorg-apps mesa-libgl
 
 echo "--- Thank you for using our scripts ---"
 echo "--- This script will help you complete the system setup ---"
