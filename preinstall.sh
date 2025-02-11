@@ -33,9 +33,10 @@ while true; do
     fi
 done
 
-echo "All information has been entered successfully."
-echo "Hostname: $hostname"
-echo "User: $user"
+read -p "Partition (Example: /dev/nvme0n1): " partition
+read -p "EFI partition (Example: /dev/nvme0n1p1)" efi
+read -p "Swap partition (Example: /dev/nvme0n1p2)" swap
+read -p "Root partition (Example: /dev/nvme0n1p3)" root
 
 # Formatting file systems
 mkfs.fat -F32 $efi
